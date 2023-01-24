@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:background="@color/grey"
+    >
+
+
+    <TextView
+        android:background="@color/newgrey"
+        android:textSize="44sp"
+        android:text="Edit Date"
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/tv_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_startAlarm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+    <TextView
+        android:textSize="44sp"
+        android:text="Edit Time"
+        android:background="@color/newgrey"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btn_stopAlarm"
+        app:layout_constraintStart_toEndOf="@id/tv_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:backgroundTint="@color/black"
+        android:text="Start alarm"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:id="@+id/btn_startAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_stopAlarm"
+        app:layout_constraintTop_toBottomOf="@id/tv_date"
+        />
+    <Button
+        android:backgroundTint="@color/black"
+        android:text="stop alarm"
+        android:layout_marginStart="70dp"
+        android:id="@+id/btn_stopAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_startAlarm"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

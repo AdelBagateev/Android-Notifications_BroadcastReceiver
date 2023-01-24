@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Notifications_broadcastReceiver</string>
+    <string name="notification_chanel_name" translatable="false">qwerty</string>
+    <string name="notification_chanel_id">itis hello</string>
+</resources>

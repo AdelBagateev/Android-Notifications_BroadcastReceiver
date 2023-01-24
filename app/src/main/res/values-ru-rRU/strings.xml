@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notifications_broadcastReceiver</string>
+    <string name="notification_chanel_id">Итис вперде</string>
+</resources>
